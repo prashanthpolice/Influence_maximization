@@ -1,0 +1,535 @@
+{
+  "run_id": "20261108_172019_021908",
+  "device": "cpu",
+  "seeds": {
+    "python": 20261108,
+    "numpy": 20261108,
+    "pytorch": 20261108,
+    "random_baseline": 20261109,
+    "cuda_seeded_if_available": false
+  },
+  "configuration": {
+    "graph_path": "C:\\DISK-D\\SEM 7\\MAJOR PROJECT\\our project\\BIGDN\\train_graphs\\graph1.txt",
+    "graph_role": "single small repository training graph; evaluation reuses it",
+    "nodes": 26,
+    "directed_edges": 55,
+    "edge_probability": "1 / in_degree(target)",
+    "seed_budget": 3,
+    "episodes": 10,
+    "student_optimizer_updates": 10,
+    "monte_carlo_trials_per_uncached_estimate": 100,
+    "uncached_spread_estimate_calls": 39,
+    "total_ic_cascade_trials": 3900,
+    "spread_estimate_cache_enabled": false,
+    "reward": "marginal change in expected influenced-node count",
+    "replay_reward_scale": "marginal reward / number of nodes (n_steps=1)",
+    "target_network_update_interval": 100,
+    "teacher_checkpoint": "C:\\DISK-D\\SEM 7\\MAJOR PROJECT\\our project\\BIGDN\\q_net.pth"
+  },
+  "training_steps": [
+    {
+      "update": 1,
+      "selected_seed": 7,
+      "seed_prefix": [
+        7
+      ],
+      "estimated_spread": 2.79,
+      "marginal_reward": 2.79,
+      "normalized_replay_reward": 0.10730769230769231,
+      "mc_trials": 100,
+      "replay_buffer_size": 3
+    },
+    {
+      "update": 1,
+      "selected_seed": 16,
+      "seed_prefix": [
+        7,
+        16
+      ],
+      "estimated_spread": 4.33,
+      "marginal_reward": 1.54,
+      "normalized_replay_reward": 0.05923076923076923,
+      "mc_trials": 100,
+      "replay_buffer_size": 3
+    },
+    {
+      "update": 1,
+      "selected_seed": 18,
+      "seed_prefix": [
+        7,
+        16,
+        18
+      ],
+      "estimated_spread": 5.14,
+      "marginal_reward": 0.8099999999999996,
+      "normalized_replay_reward": 0.03115384615384614,
+      "mc_trials": 100,
+      "replay_buffer_size": 3
+    },
+    {
+      "update": 2,
+      "selected_seed": 23,
+      "seed_prefix": [
+        23
+      ],
+      "estimated_spread": 1.22,
+      "marginal_reward": 1.22,
+      "normalized_replay_reward": 0.04692307692307692,
+      "mc_trials": 100,
+      "replay_buffer_size": 6
+    },
+    {
+      "update": 2,
+      "selected_seed": 13,
+      "seed_prefix": [
+        23,
+        13
+      ],
+      "estimated_spread": 2.21,
+      "marginal_reward": 0.99,
+      "normalized_replay_reward": 0.03807692307692308,
+      "mc_trials": 100,
+      "replay_buffer_size": 6
+    },
+    {
+      "update": 2,
+      "selected_seed": 2,
+      "seed_prefix": [
+        23,
+        13,
+        2
+      ],
+      "estimated_spread": 10.35,
+      "marginal_reward": 8.14,
+      "normalized_replay_reward": 0.3130769230769231,
+      "mc_trials": 100,
+      "replay_buffer_size": 6
+    },
+    {
+      "update": 3,
+      "selected_seed": 2,
+      "seed_prefix": [
+        2
+      ],
+      "estimated_spread": 8.36,
+      "marginal_reward": 8.36,
+      "normalized_replay_reward": 0.3215384615384615,
+      "mc_trials": 100,
+      "replay_buffer_size": 9
+    },
+    {
+      "update": 3,
+      "selected_seed": 1,
+      "seed_prefix": [
+        2,
+        1
+      ],
+      "estimated_spread": 11.69,
+      "marginal_reward": 3.33,
+      "normalized_replay_reward": 0.1280769230769231,
+      "mc_trials": 100,
+      "replay_buffer_size": 9
+    },
+    {
+      "update": 3,
+      "selected_seed": 15,
+      "seed_prefix": [
+        2,
+        1,
+        15
+      ],
+      "estimated_spread": 15.74,
+      "marginal_reward": 4.050000000000001,
+      "normalized_replay_reward": 0.1557692307692308,
+      "mc_trials": 100,
+      "replay_buffer_size": 9
+    },
+    {
+      "update": 4,
+      "selected_seed": 0,
+      "seed_prefix": [
+        0
+      ],
+      "estimated_spread": 12.76,
+      "marginal_reward": 12.76,
+      "normalized_replay_reward": 0.49076923076923074,
+      "mc_trials": 100,
+      "replay_buffer_size": 12
+    },
+    {
+      "update": 4,
+      "selected_seed": 15,
+      "seed_prefix": [
+        0,
+        15
+      ],
+      "estimated_spread": 17.24,
+      "marginal_reward": 4.479999999999999,
+      "normalized_replay_reward": 0.17230769230769225,
+      "mc_trials": 100,
+      "replay_buffer_size": 12
+    },
+    {
+      "update": 4,
+      "selected_seed": 14,
+      "seed_prefix": [
+        0,
+        15,
+        14
+      ],
+      "estimated_spread": 18.75,
+      "marginal_reward": 1.5100000000000016,
+      "normalized_replay_reward": 0.05807692307692314,
+      "mc_trials": 100,
+      "replay_buffer_size": 12
+    },
+    {
+      "update": 5,
+      "selected_seed": 2,
+      "seed_prefix": [
+        2
+      ],
+      "estimated_spread": 8.3,
+      "marginal_reward": 8.3,
+      "normalized_replay_reward": 0.31923076923076926,
+      "mc_trials": 100,
+      "replay_buffer_size": 15
+    },
+    {
+      "update": 5,
+      "selected_seed": 14,
+      "seed_prefix": [
+        2,
+        14
+      ],
+      "estimated_spread": 9.31,
+      "marginal_reward": 1.0099999999999998,
+      "normalized_replay_reward": 0.038846153846153836,
+      "mc_trials": 100,
+      "replay_buffer_size": 15
+    },
+    {
+      "update": 5,
+      "selected_seed": 21,
+      "seed_prefix": [
+        2,
+        14,
+        21
+      ],
+      "estimated_spread": 10.25,
+      "marginal_reward": 0.9399999999999995,
+      "normalized_replay_reward": 0.036153846153846134,
+      "mc_trials": 100,
+      "replay_buffer_size": 15
+    },
+    {
+      "update": 6,
+      "selected_seed": 7,
+      "seed_prefix": [
+        7
+      ],
+      "estimated_spread": 2.5,
+      "marginal_reward": 2.5,
+      "normalized_replay_reward": 0.09615384615384616,
+      "mc_trials": 100,
+      "replay_buffer_size": 18
+    },
+    {
+      "update": 6,
+      "selected_seed": 2,
+      "seed_prefix": [
+        7,
+        2
+      ],
+      "estimated_spread": 9.45,
+      "marginal_reward": 6.949999999999999,
+      "normalized_replay_reward": 0.2673076923076923,
+      "mc_trials": 100,
+      "replay_buffer_size": 18
+    },
+    {
+      "update": 6,
+      "selected_seed": 16,
+      "seed_prefix": [
+        7,
+        2,
+        16
+      ],
+      "estimated_spread": 11.14,
+      "marginal_reward": 1.6900000000000013,
+      "normalized_replay_reward": 0.06500000000000004,
+      "mc_trials": 100,
+      "replay_buffer_size": 18
+    },
+    {
+      "update": 7,
+      "selected_seed": 2,
+      "seed_prefix": [
+        2
+      ],
+      "estimated_spread": 8.48,
+      "marginal_reward": 8.48,
+      "normalized_replay_reward": 0.3261538461538462,
+      "mc_trials": 100,
+      "replay_buffer_size": 21
+    },
+    {
+      "update": 7,
+      "selected_seed": 3,
+      "seed_prefix": [
+        2,
+        3
+      ],
+      "estimated_spread": 9.44,
+      "marginal_reward": 0.9599999999999991,
+      "normalized_replay_reward": 0.036923076923076885,
+      "mc_trials": 100,
+      "replay_buffer_size": 21
+    },
+    {
+      "update": 7,
+      "selected_seed": 15,
+      "seed_prefix": [
+        2,
+        3,
+        15
+      ],
+      "estimated_spread": 13.93,
+      "marginal_reward": 4.49,
+      "normalized_replay_reward": 0.1726923076923077,
+      "mc_trials": 100,
+      "replay_buffer_size": 21
+    },
+    {
+      "update": 8,
+      "selected_seed": 2,
+      "seed_prefix": [
+        2
+      ],
+      "estimated_spread": 8.28,
+      "marginal_reward": 8.28,
+      "normalized_replay_reward": 0.31846153846153846,
+      "mc_trials": 100,
+      "replay_buffer_size": 24
+    },
+    {
+      "update": 8,
+      "selected_seed": 15,
+      "seed_prefix": [
+        2,
+        15
+      ],
+      "estimated_spread": 13.1,
+      "marginal_reward": 4.82,
+      "normalized_replay_reward": 0.1853846153846154,
+      "mc_trials": 100,
+      "replay_buffer_size": 24
+    },
+    {
+      "update": 8,
+      "selected_seed": 0,
+      "seed_prefix": [
+        2,
+        15,
+        0
+      ],
+      "estimated_spread": 17.05,
+      "marginal_reward": 3.950000000000001,
+      "normalized_replay_reward": 0.15192307692307697,
+      "mc_trials": 100,
+      "replay_buffer_size": 24
+    },
+    {
+      "update": 9,
+      "selected_seed": 2,
+      "seed_prefix": [
+        2
+      ],
+      "estimated_spread": 8.27,
+      "marginal_reward": 8.27,
+      "normalized_replay_reward": 0.31807692307692303,
+      "mc_trials": 100,
+      "replay_buffer_size": 27
+    },
+    {
+      "update": 9,
+      "selected_seed": 15,
+      "seed_prefix": [
+        2,
+        15
+      ],
+      "estimated_spread": 13.07,
+      "marginal_reward": 4.800000000000001,
+      "normalized_replay_reward": 0.18461538461538465,
+      "mc_trials": 100,
+      "replay_buffer_size": 27
+    },
+    {
+      "update": 9,
+      "selected_seed": 7,
+      "seed_prefix": [
+        2,
+        15,
+        7
+      ],
+      "estimated_spread": 13.77,
+      "marginal_reward": 0.6999999999999993,
+      "normalized_replay_reward": 0.026923076923076897,
+      "mc_trials": 100,
+      "replay_buffer_size": 27
+    },
+    {
+      "update": 10,
+      "selected_seed": 2,
+      "seed_prefix": [
+        2
+      ],
+      "estimated_spread": 8.09,
+      "marginal_reward": 8.09,
+      "normalized_replay_reward": 0.31115384615384617,
+      "mc_trials": 100,
+      "replay_buffer_size": 30
+    },
+    {
+      "update": 10,
+      "selected_seed": 15,
+      "seed_prefix": [
+        2,
+        15
+      ],
+      "estimated_spread": 12.76,
+      "marginal_reward": 4.67,
+      "normalized_replay_reward": 0.17961538461538462,
+      "mc_trials": 100,
+      "replay_buffer_size": 30
+    },
+    {
+      "update": 10,
+      "selected_seed": 0,
+      "seed_prefix": [
+        2,
+        15,
+        0
+      ],
+      "estimated_spread": 17.34,
+      "marginal_reward": 4.58,
+      "normalized_replay_reward": 0.17615384615384616,
+      "mc_trials": 100,
+      "replay_buffer_size": 30
+    }
+  ],
+  "evaluations": [
+    {
+      "policy": "teacher",
+      "seeds": [
+        0,
+        5,
+        15
+      ],
+      "estimated_spread": 21.66,
+      "mc_trials": 100,
+      "evaluation_is_independent": false,
+      "after_student_update": 1
+    },
+    {
+      "policy": "student",
+      "seeds": [
+        2,
+        15,
+        0
+      ],
+      "estimated_spread": 17.16,
+      "mc_trials": 100,
+      "evaluation_is_independent": false,
+      "after_student_update": 1
+    },
+    {
+      "policy": "random",
+      "seeds": [
+        5,
+        1,
+        15
+      ],
+      "estimated_spread": 14.12,
+      "mc_trials": 100,
+      "evaluation_is_independent": false,
+      "after_student_update": 1
+    },
+    {
+      "policy": "teacher",
+      "seeds": [
+        0,
+        5,
+        15
+      ],
+      "estimated_spread": 21.51,
+      "mc_trials": 100,
+      "evaluation_is_independent": false,
+      "after_student_update": 5
+    },
+    {
+      "policy": "student",
+      "seeds": [
+        2,
+        15,
+        0
+      ],
+      "estimated_spread": 17.23,
+      "mc_trials": 100,
+      "evaluation_is_independent": false,
+      "after_student_update": 5
+    },
+    {
+      "policy": "random",
+      "seeds": [
+        5,
+        0,
+        4
+      ],
+      "estimated_spread": 17.74,
+      "mc_trials": 100,
+      "evaluation_is_independent": false,
+      "after_student_update": 5
+    },
+    {
+      "policy": "teacher",
+      "seeds": [
+        0,
+        5,
+        15
+      ],
+      "estimated_spread": 22.15,
+      "mc_trials": 100,
+      "evaluation_is_independent": false,
+      "after_student_update": 10
+    },
+    {
+      "policy": "student",
+      "seeds": [
+        2,
+        15,
+        0
+      ],
+      "estimated_spread": 16.6,
+      "mc_trials": 100,
+      "evaluation_is_independent": false,
+      "after_student_update": 10
+    },
+    {
+      "policy": "random",
+      "seeds": [
+        20,
+        6,
+        10
+      ],
+      "estimated_spread": 6.45,
+      "mc_trials": 100,
+      "evaluation_is_independent": false,
+      "after_student_update": 10
+    }
+  ],
+  "evaluation_is_independent": false,
+  "elapsed_seconds": 1.0672193999635056,
+  "reproducibility_note": "Seeds are fixed and CPU execution is selected. Exact reproducibility can still depend on PyTorch, PyG, torch-scatter, and platform versions.",
+  "checkpoint": "C:\\DISK-D\\SEM 7\\MAJOR PROJECT\\our project\\Base_project\\toy_demo\\outputs\\run_20261108_172019_021908\\student_final.pth"
+}

@@ -1,0 +1,8 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+--find-links https://data.pyg.org/whl/torch-2.2.0+cpu.html
+
+numpy==1.26.4
+torch==2.2.2+cpu
+torch-geometric==2.5.3
+torch-scatter==2.1.2+pt22cpu
+networkx==3.2.1
